@@ -1,0 +1,29 @@
+server:
+  port: 8885
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/szks?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://192.168.11.114:54321/jhlkzg
+#    username: system
+#    password: system
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://192.168.182.247:54321/lkzg
+#    username: system
+#    password: system
+    url: jdbc:postgresql://192.168.27.210:5432/lkzg?currentSchema=kyqcr,sys_catalog&searchpath=lkzg&stringtype=unspecified&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    driver-class-name: org.postgresql.Driver
+    username: lkzg
+    password: lkzg
+#输出目录
+strOutPath: E:\myWebGit\zrzy-ahlk\zrzy-ahlk-bdc\src\main
+
+#父包名
+strPackage: zondy.land.ahlk.bdc
