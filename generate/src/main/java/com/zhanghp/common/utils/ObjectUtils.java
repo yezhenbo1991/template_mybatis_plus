@@ -27,9 +27,9 @@ public class ObjectUtils {
      */
     public static boolean isEmpty(Object obj){
         // 包装类及日期等在这一层判断
-        if (obj == null) {
-            return true;
-        }
+//        if (obj == null) {
+//            return true;
+//        }
 
         if (obj instanceof CharSequence) {
             return StrUtil.isEmpty((CharSequence) obj);
